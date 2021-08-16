@@ -1,0 +1,611 @@
+
+@import "./var.scss";
+
+body {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-family: $font-family;
+    background: $body-bg;
+	color:$font-color;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div,
+ul,
+li,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: $font-color;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small {
+  font-size: 65%;
+}
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
+  font-size: 75%;
+}
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+p {
+  margin: 0 0 10px;
+}
+
+.container, .ctr {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+img {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+// ios webkit overflow scroll
+.srltouch {
+    -webkit-overflow-scrolling: touch;
+}
+/* a link*/
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+
+}
+
+
+a:link,
+a:visited{
+    color: $text-primary;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: darken( $text-primary,10%);
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* float*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*clearfix*/
+.cfx:before,
+.cfx:after,
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after,
+.cfx:after{
+    clear: both;
+}
+
+.bfc {
+    overflow: hidden;
+}
+
+.clip {
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+
+/* 输入框focus焦点*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    outline: none !important;
+}
+
+.text-primary {
+    color: $text-primary;
+}
+
+.text-success {
+    color: $text-success;
+}
+
+.text-info {
+    color: $text-info;
+}
+
+.text-danger {
+    color: $text-danger;
+}
+
+.text-warning {
+    color: $text-warning;
+}
+
+.text-muted {
+    color: $text-muted;
+}
+
+// table
+.tb-fixed {
+    table-layout: fixed;
+}
+
+.tb-auto {
+    table-layout: auto;
+}
+
+// table
+.tb {
+    display: table;
+}
+
+// table-row
+.tb-row {
+    display: table-row;
+}
+// table-cell
+.tb-cell {
+    display: table-cell;
+}
+
+// table-cap
+.tb-cap {
+    display: table-caption;
+}
+
+// table-col
+.tb-col {
+    border-collapse: collapse;
+}
+
+// table-sep
+.tb-sep {
+    border-collapse: separate;
+}
+
+
+/*定位position*/
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+
+// hidden
+.overflow-y {
+    overflow-y: hidden;
+}
+
+.overflow-x {
+    overflow-y: hidden;
+}
+
+.d-hide {
+    display: none;
+}
+
+.v-hide{
+    position:absolute;
+    visibility:hidden;
+}
+
+
+
+/* placeholder */
+/*webkit*/
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: $text-placeholder !important;
+}
+
+/*IE10+*/
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: $text-placeholder !important;
+}
+
+/*Firefox4-18*/
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: $text-placeholder !important;
+}
+
+/*Firefox19+*/
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: $text-placeholder !important;
+}
+
+
+/* placeholder 兼容ie8  ie9 */
+.ie8-pwd {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    color: $text-placeholder;
+    text-indent: 10px;
+}
+
+
+/*ellipsis*/
+.elp-no {
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.elp {
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.elp-1 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.elp-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.elp-3 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.elp-4 {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+
+// 宽度的百分比
+
+.w-0-5 {
+    width: 5%;
+    float: left;
+}
+
+.w-1 {
+    width: 10%;
+    float: left;
+}
+
+.w-1-5 {
+    width: 15%;
+    float: left;
+}
+
+.w-2 {
+    width: 20%;
+    float: left;
+}
+
+.w-2-5 {
+    width: 25%;
+    float: left;
+}
+
+.w-3 {
+    width: 30%;
+    float: left;
+}
+
+.w-3-5 {
+    width: 35%;
+    float: left;
+}
+
+.w-4 {
+    width: 40%;
+    float: left;
+}
+
+.w-4-5 {
+    width: 45%;
+    float: left;
+}
+
+.w-5 {
+    width: 50%;
+    float: left;
+}
+
+.width-5-5 {
+    width: 55%;
+    float: left;
+}
+
+.w-6 {
+    width: 60%;
+    float: left;
+}
+
+.w-6-5 {
+    width: 65%;
+    float: left;
+}
+
+.w-7 {
+    width: 70%;
+    float: left;
+}
+
+.w-7-5 {
+    width: 75%;
+    float: left;
+}
+
+.w-8 {
+    width: 80%;
+    float: left;
+}
+
+.w-8-5 {
+    width: 85%;
+    float: left;
+}
+
+.w-9 {
+    width: 90%;
+    float: left;
+}
+
+.w-9-5 {
+    width: 95%;
+    float: left;
+}
+
+.w-100 {
+    width: 100%;
+    clear: both;
+}
+
+// 用于表格的百分比
+.tb-0-5 {
+    width: 5%;
+}
+
+.tb-1 {
+    width: 10%;
+}
+
+.tb-1-5 {
+    width: 15%;
+}
+
+.tb-2 {
+    width: 20%;
+}
+
+.tb-2-5 {
+    width: 25%;
+}
+
+.tb-3 {
+    width: 30%;
+}
+
+.tb-3-5 {
+    width: 35%;
+}
+
+.tb-4 {
+    width: 40%;
+}
+
+.tb-4-5 {
+    width: 45%;
+}
+
+.tb-5 {
+    width: 50%;
+}
+
+.table-5-5 {
+    width: 55%;
+}
+
+.tb-6 {
+    width: 60%;
+}
+
+.tb-6-5 {
+    width: 65%;
+}
+
+.tb-7 {
+    width: 70%;
+}
+
+.tb-7-5 {
+    width: 75%;
+}
+
+.tb-8 {
+    width: 80%;
+}
+
+.tb-8-5 {
+    width: 85%;
+}
+
+.tb-9 {
+    width: 90%;
+}
+
+.tb-9-5 {
+    width: 95%;
+}
+
+.tb-100, .table-100 {
+    width: 100%;
+    width: 100%;
+}

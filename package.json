@@ -1,0 +1,66 @@
+{
+  "name": "vue-spa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "scss": "gulp watch",
+    "serve": "vue-cli-service serve ",
+    "build": "vue-cli-service build &&  gulp release",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.3",
+    "node-sass": "^4.14.1",
+    "qs": "^6.10.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.2",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "^7.1.4",
+    "babel-eslint": "^10.1.0",
+    "del": "^3.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.14.1",
+    "qs": "^6.10.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^3.2.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-multi-spaces": "off",
+      "no-mixed-spaces-and-tabs": "off"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18320867985/mobileui.git"
+  }
+}

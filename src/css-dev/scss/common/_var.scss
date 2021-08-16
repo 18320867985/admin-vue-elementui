@@ -1,0 +1,52 @@
+
+/*设计图width*/
+$screenwidth:375;
+
+/*rem 份数*/
+$remSize:18.75;
+
+/* 375/18.75 =20px=1rem */
+
+/*html rem比例*/
+//$rem:($screenwidth/$remSize);
+
+$rem:20;
+
+$text-primary: darken(#428bca, 6.5%) !default; // #337ab7
+$text-success: #5cb85c !default;
+$text-info: #5bc0de !default;
+$text-warning: #f0ad4e !default;
+$text-danger: #d9534f !default;
+$text-muted:#777;
+$text-placeholder:#999;
+
+$font-family:"Helvetica Neue",
+Helvetica,
+sans-serif !default;
+
+$font-size:14px !default;
+$font-color:#333;
+$line-height: 1.42858;
+$body-bg:#f8f8f8;
+
+$active-color:#690;
+$active-bg:#690;
+$a-color:darken($text-primary, 10%);
+$slide-rd-df:#ccc; // slide 的小圆点active的 color
+$slide-rd-active:$text-primary; // slide 的小圆点active的 color
+
+$text-disabled : #ccc;
+$text-placeholder: #999;
+
+// line 线条
+$line:#f2f2f2;
+$line-blod: #ddd;
+
+// 按钮激活的active背景
+$bg-active: #003399;
+
+// placeholer提示文字
+$text-placeholer: #8c8c96;
+
+
+

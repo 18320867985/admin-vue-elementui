@@ -1,0 +1,44 @@
+ // 大组件切换
+.slide-fade-enter-active {
+		transition: all 1s ease;
+	}
+
+.slide-fade-enter {
+	transform: translate(10px);
+	filter: blur(10px) opacity(0);
+
+}
+
+.slide-fade2-enter-active {
+		transition: all 1s ease;
+	}
+
+.slide-fade2-enter {
+	transform: translateY(10px);
+	opacity: 0;
+}
+
+// 子组件切换
+.complist{
+	display: none;
+	&.active{
+		display: block;
+		animation:  complist-slide-in 1s ease both;
+	}
+	
+}
+
+
+
+@keyframes  complist-slide-in{
+    0% {
+        opacity:0;
+       transform: translateY(10px);
+    }
+    100% {
+        transform: none;
+		 opacity:1;
+      
+    }
+
+}
