@@ -30,8 +30,11 @@ body,
 }
 
 .index-h-icon {
+	margin-left: -10px;
+	padding: 8px 10px;
 	cursor: pointer;
 	color: #333;
+	font-size: 17px;
 }
 .index-cnt {
 	flex: 1 0 0;
@@ -95,18 +98,16 @@ body,
 	flex: 1 1 auto;
 	height: 100%;
 	overflow-y: auto;
-	//padding-top: 36px;
 	background: #f8f8f8;
 
 	.el-main {
-		padding-top: 50px;
+		padding: 47px 10px 10px 10px;
 	}
 }
 
 .index-main-nav {
 	position: fixed;
 	top: 50px;
-
 	padding-left: 10px;
 	width: 100%;
 	z-index: 999;
@@ -192,4 +193,3 @@ body,
 		margin-left: 10px;
 	}
 }
-
