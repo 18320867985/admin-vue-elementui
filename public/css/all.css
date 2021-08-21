@@ -62087,7 +62087,9 @@ textarea::-moz-placeholder {
 --------------- */
 /* Break-point
 --------------------------*/
-html, body, #app {
+html,
+body,
+#app {
   height: 100%;
   background: #fff; }
 
@@ -62144,14 +62146,14 @@ html, body, #app {
           box-shadow: 2px 0 10px rgba(0, 0, 0, 0.075); }
   .index-cnt-aside.el-scrollbar.open {
     width: 13% !important;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease; }
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
   .index-cnt-aside.el-scrollbar .scrollbar-wrapper {
     overflow-x: hidden; }
 
 .index-aside {
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   width: 100% !important;
   height: 100%;
   overflow-y: auto;
@@ -62166,6 +62168,12 @@ html, body, #app {
   .index-aside .el-menu {
     margin: auto;
     border-right: none; }
+    .index-aside .el-menu .item-home {
+      border-bottom: 1px solid #f2f2f2;
+      background-color: #fff; }
+      .index-aside .el-menu .item-home.active i,
+      .index-aside .el-menu .item-home.active span {
+        color: #337ab7; }
   .index-aside .el-menu-item:hover {
     background: #fefefe; }
 
@@ -62199,7 +62207,7 @@ html, body, #app {
     display: inline-block;
     vertical-align: middle; }
   .index-main-nav .li-link {
-    padding: 8px  15px; }
+    padding: 8px 15px; }
     .index-main-nav .li-link:hover {
       color: #337ab7; }
     .index-main-nav .li-link:nth-last-of-type(1) {

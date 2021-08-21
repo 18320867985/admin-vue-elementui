@@ -15,42 +15,38 @@ const routes = [
 		path: "/",
 		component: Layout,
 		name: "",
-		meta: { ttl: "首页", icon: "el-icon-s-home" },
+		meta: {ttl: "首页", icon: "el-icon-s-home"},
 		//	redirect: '/basic',
 		children: [
 			{
 				path: "",
-				component: Home,
-				meta: { ttl: "Home" },
+				component: Home
 			}
 		]
 	}, {
 		path: "/upgoods",
 		component: Layout,
-		meta: { ttl: "提货报价", icon: "el-icon-s-cooperation" },
+		meta: {ttl: "提货报价", icon: "el-icon-s-cooperation"},
 		children: Upgoods
-
 	},
 	{
 		path: "/account",
 		component: Layout,
-		meta: { ttl: "账户余额", icon: "el-icon-s-check" },
+		meta: {ttl: "账户余额", icon: "el-icon-s-check"},
 		children: Account
-
 	},
 
 	{
 		path: "/recharge",
 		component: Layout,
-		meta: { ttl: "充值记录", icon: "el-icon-goods" },
+		meta: {ttl: "充值记录", icon: "el-icon-goods"},
 		children: Recharge
-
 	},
 
 	{
 		path: "/drawrecord",
 		component: Layout,
-		meta: { ttl: "提现记录", icon: "el-icon-document-copy" },
+		meta: {ttl: "提现记录", icon: "el-icon-document-copy"},
 		children: Drawrecord
 
 	},
@@ -59,9 +55,8 @@ const routes = [
 		ttl: "登录",
 		component: Login,
 		hidden: true,
-
 	},
-		
+
 ];
 
 import Vue from 'vue';
@@ -70,12 +65,13 @@ Vue.use(VueRouter);
 
 const createRouter = () => new VueRouter({
 	mode: 'history', // require service support
-	scrollBehavior: () => ({ y: 0 }),
+	scrollBehavior: () => ({y: 0}),
 	routes
 })
 
 const router = createRouter()
-export function resetRouter() {
+export function resetRouter ()
+{
 	const newRouter = createRouter()
 	router.matcher = newRouter.matcher // reset router
 }
